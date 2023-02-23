@@ -27,10 +27,6 @@ class Viking extends Soldier{
         this.name = name
     }
 
-    attack(){
-        return this.strength
-    }
-
     receiveDamage(the_damage){
         this.health-=the_damage
         if(this.health > 0){
@@ -50,10 +46,6 @@ class Saxon extends Soldier {
         super(health,strength)
         this.health = health
         this.strength = strength
-    }
-
-    attack(){
-        return this.strength
     }
 
     receiveDamage(the_damage){
